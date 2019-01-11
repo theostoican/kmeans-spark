@@ -1,0 +1,8 @@
+sudo apt-get install perf-tools-unstable
+sudo apt-get install gawk
+sudo apt-get install sysstat
+
+sudo su
+echo 0 /proc/sys/kernel/perf_event_paranoid
+
+/home/theodor_stoican/.ssh/google_compute_engine.pub

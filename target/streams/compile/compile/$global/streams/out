@@ -1,0 +1,40 @@
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:4:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval r_csv = sc.textFile("gs://bigdata-iris/movies_processed.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:5:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval header = r_csv.first()[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:6:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval r_csv2 = r_csv.filter(row => row != header)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:7:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval t = r_csv2.map(line=> line.split(',')(1) + "," + line.split(',')(2) + "," + line.split(',')(3) + "," + line.split(',')(4))[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:8:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval convData = t.map(s => Vectors.dense(s.split(',').map(_.toDouble))).cache()[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:10:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval numClusters = 0[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:11:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval numIterations = 300[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:12:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval clusters = None[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:15:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mfor (numClusters <- 1 to 10) {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:21:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval foo = clusters.predict(convData)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:24:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mfoo.saveAsTextFile("gs://bigdata-iris/labels")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:27:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval convDataArr = convData.map(arr => arr.toArray)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/theodor/master/BigData/kmeans.scala:28:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mconvDataArr.map(arr => arr(0) + "," + arr(1) + "," + arr(2) + "," + arr(3)).saveAsTextFile("gs://bigdata-iris/data")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m13 errors found[0m
