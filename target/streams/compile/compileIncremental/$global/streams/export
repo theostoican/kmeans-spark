@@ -1,1 +1,0 @@
-scalac -bootclasspath /home/theodor/.sbt/boot/scala-2.12.7/lib/scala-library.jar -classpath /home/theodor/master/BigData/target/scala-2.12/classes /home/theodor/master/BigData/kmeans.scala
