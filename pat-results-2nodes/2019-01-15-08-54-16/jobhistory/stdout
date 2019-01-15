@@ -1,0 +1,25 @@
+19/01/15 08:52:39 INFO org.spark_project.jetty.util.log: Logging initialized @2194ms
+19/01/15 08:52:39 INFO org.spark_project.jetty.server.Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+19/01/15 08:52:39 INFO org.spark_project.jetty.server.Server: Started @2282ms
+19/01/15 08:52:39 INFO org.spark_project.jetty.server.AbstractConnector: Started ServerConnector@5eefa415{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+19/01/15 08:52:40 WARN org.apache.spark.scheduler.FairSchedulableBuilder: Fair Scheduler configuration file not found so jobs will be scheduled in FIFO order. To use fair scheduling, configure pools in fairscheduler.xml or set spark.scheduler.allocation.file to a file that contains the configuration.
+19/01/15 08:52:41 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at bigdata-proj-m/10.132.0.10:8032
+19/01/15 08:52:41 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at bigdata-proj-m/10.132.0.10:10200
+19/01/15 08:52:43 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1547537194204_0006
+19/01/15 08:52:49 INFO org.apache.hadoop.mapred.FileInputFormat: Total input files to process : 1
+19/01/15 08:52:52 INFO org.apache.hadoop.mapred.FileInputFormat: Total input files to process : 1
+19/01/15 08:52:59 INFO com.github.fommil.jni.JniLoader: successfully loaded /tmp/jniloader3161885976055988852netlib-native_system-linux-x86_64.so
+1.7826235639518944E10
+8.795699599219826E9
+5.25868166065177E9
+3.556197601432826E9
+2.5416284256831894E9
+1.8748010824696345E9
+1.3382735781077542E9
+1.0036481815270028E9
+7.879193743570526E8
+6.32352715431937E8
+acc:
+0.98001456
+Done
+19/01/15 08:54:12 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@5eefa415{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
